@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* vai deixar a altura e largura do tamanho que eu definir o objeto, mesmo acrescentando, por exemplo, 2px de border. (ou seja, se o objeto é 200x200 e é acrescentado um border a altura e largura não sera somada, o que algumas vezes é bom, por isso a utilização do box-sizing: border-box)*/
+  font-family: "Overlock", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.image1 {
+  background-image: url(../images/Sargent_art2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+body {
+  background-color: rgb(40, 43, 48);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgb(40, 43, 48);
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: 0px 1px 100px 10px rgb(20, 23, 29); /*Melhorar essa parte*/
+}
+.boxImage {
+  height: 100%;
+  flex: 1;
+}
+.boxImage figure {
+  height: 100%;
+}
+.boxImage figure img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+}
+.boxForm {
+  flex: 2;
+}
+.boxForm .text {
+  padding-top: 10px;
+  text-align: center;
+  color: rgb(173, 134, 86);
+}
+.text h1,
+.text p {
+  text-shadow: 1px 0px 0px rgb(105, 72, 31);
+}
+::-webkit-input-placeholder {
+  /*muda a cor do placeholder (input)*/
+  color: rgb(173, 134, 86);
+}
+
+.formulario {
+  padding-top: 30px;
+}
+.formulario div input {
+  font-size: 1em;
+}
+.formulario div {
+  padding-top: 20px;
+}
+.name_block {
+  display: flex;
+  justify-content: space-around;
+}
+.contact_block {
+  display: flex;
+  justify-content: space-around;
+}
+.password_block {
+  display: flex;
+  justify-content: space-around;
+}
+.formulario div #design {
+  background-color: rgb(40, 43, 48);
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+  outline: 0;
+  color: white;
+  border-bottom: 1px solid rgb(173, 134, 86);
+}
+.confirm_block {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  margin-top: 20px;
+}
+.confirm_block #button {
+  padding: 10px;
+  width: 90px;
+  border-radius: 5px;
+  border: none;
+  color: rgb(20, 23, 29);
+  background-color: rgb(173, 134, 86);
+  font-size: 1.1em;
+  cursor: pointer;
+}
+.confirm_block .have_login {
+  color: rgb(173, 134, 86);
+}
+.confirm_block .have_login a {
+  color: rgb(133, 165, 218);
+}
+
+@media (max-width: 770px) {
+  .boxImage {
+    display: none;
+  }
+  .container {
+    background-color: rgb(40, 43, 48);
+    width: 95%;
+    height: 80vh;
+    display: flex;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 0px 1px 100px 10px rgb(20, 23, 29);
+  }
+}
+
+@media (max-width: 530px) {
+  .boxImage {
+    display: none;
+  }
+  .container {
+    background-color: rgb(40, 43, 48);
+    width: 95%;
+    height: 80vh;
+    display: flex;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 0px 1px 100px 10px rgb(20, 23, 29);
+  }
+  .formulario div #design {
+    background-color: rgb(40, 43, 48);
+    padding: 10px;
+    width: 155px;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid rgb(173, 134, 86);
+  }
+  .confirm_block {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 380px) {
+  .boxImage {
+    display: none;
+  }
+  .container {
+    background-color: rgb(40, 43, 48);
+    width: 95%;
+    height: 80vh;
+    display: flex;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 0px 1px 100px 10px rgb(20, 23, 29);
+  }
+  .formulario div #design {
+    background-color: rgb(40, 43, 48);
+    padding: 10px;
+    width: 155px;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid rgb(173, 134, 86);
+  }
+  .confirm_block {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 325px) {
+  .boxImage {
+    display: none;
+  }
+  .container {
+    background-color: rgb(40, 43, 48);
+    width: 95%;
+    height: 80vh;
+    display: flex;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: 0px 1px 100px 10px rgb(20, 23, 29);
+  }
+  .formulario div #design {
+    background-color: rgb(40, 43, 48);
+    padding: 10px;
+    width: 140px;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid rgb(173, 134, 86);
+  }
+  .confirm_block {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin-top: 5px;
+  }
+  .confirm_block .have_login {
+    width: 50%;
+    margin-top: -18px;
+  }
+  .confirm_block input {
+    height: 20%;
+  }
+}
